@@ -13,7 +13,7 @@
 ActiveRecord::Schema[7.0].define(version: 2022_05_15_173110) do
   create_table "products", force: :cascade do |t|
     t.string "title", null: false
-    t.text "description"
+    t.text "description" null: false
     t.integer "quantity", null: false
     t.float "weight"
     t.string "city", null: false
