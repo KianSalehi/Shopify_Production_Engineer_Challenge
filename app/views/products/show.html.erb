@@ -3,15 +3,14 @@
 <p><strong>Title: </strong><%= @product.title %></p>
 <p><strong>Description: </strong><%= @product.description %></p>
 <p><strong>Quantity: </strong><%= @product.quantity %></p>
-<p><strong>Weight: </strong><%= @product.weight %></p>
+<p><strong>Weight (lbs): </strong><%= @product.weight %></p>
 <p><strong>City: </strong><%= @product.city %></p>
-<p><strong>City Weather Information: </strong></p>
+<p><strong>City Weather Information: </strong><%= @product.weather_description %></p>
 <p>
-    <div class ='flex'>
+    <div>
         <%= button_to 'Dashboard', products_path(@product), method: :get %>
-
         <%= button_to 'Edit', edit_product_path(@product), method: :get %>
-
-        <%= button_to 'Delete', product_path(@product), method: :delete %>
+        <%= button_to 'Delete', product_path(@product), method: :delete%>
     </div>
 </p>
+<p><button><%= link_to 'Export to CSV', product_path(format: :csv)%></button></p>

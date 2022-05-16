@@ -4,6 +4,10 @@
     <tr>
         <th>Title</th>
         <th>Description</th>
+        <th>Quantity</th>
+        <th>Weight</th>
+        <th>City</th>
+        <th>Weather Description</th>
         <th>Action</th>
     </tr>
  </thead>
@@ -12,13 +16,24 @@
         <tr>
             <td><%= product.title%></td>
             <td><%= product.description%></td>
+            <td><%= product.quantity%></td>
+            <td><%= product.weight%></td>
+            <td><%= product.city%></td>
+            <td><%= product.weather_description%></td>
             <td>
                 <%= button_to 'Show', product_path(product), method: :get %>
                 <%= button_to 'Edit', edit_product_path(product), method: :get %>
-                <%= button_to 'Delete', product_path(product), method: :delete %>
+                <%= button_to 'Delete', product_path(product), method: :delete%>
             </td>
         </tr>
     <% end %>
  </tbody>
 </table>
- <%= button_to 'Create New Product', new_product_path, method: :get %>
+<p><%= button_to 'Create New Product', new_product_path, method: :get %></p>
+
+<style>
+table, th, td {
+    border:1px solid black;
+    border-collapse: collapse;
+}
+</style>
