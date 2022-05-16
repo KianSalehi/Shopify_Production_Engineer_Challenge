@@ -12,11 +12,11 @@
 
 ActiveRecord::Schema[7.0].define(version: 2022_05_15_173110) do
   create_table "products", force: :cascade do |t|
-    t.string "title", null: false
-    t.text "description" null: false
-    t.integer "quantity", null: false
+    t.string "title"
+    t.text "description"
+    t.integer "quantity"
     t.float "weight"
-    t.string "city", null: false
+    t.string "city"
     t.text "weather_description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
