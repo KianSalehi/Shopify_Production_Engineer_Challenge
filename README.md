@@ -1,8 +1,11 @@
-# README
+# Shopify Production Engineer Challenge
+
 ## About
 Hi! My name is Kian, and this is my Shopify Production Engineer Challenge repository. I have taken a challenge upon myself to learn Ruby on Rails from the posting time of this challenge and managed to develop this project as result of my learnings. This project has all the CRUD functionalities required for inventory tracking for a logistics company. Each product in the application should be associated with a city and an OpenWeather API endpoint is used to get the weather information about the city of the product. By clicking on "show" action button on each item on the list, the user is given the option to extract the data as a CSV file in the product details page. There are Integration, Model, Controller, and CRUD functionality tests were written for this project to keep a good quality control on the code written. The CSV functionality was implemented using the CSV builtin model by Ruby. 
 
-## Technology
+## Demo
+[Demo link for the challenge](https://ShopifyProductionEngineerChallenge.kiansalehi.repl.co)
+## Technologies Used
 * Ruby 3.1.2
 * Rails 7.0.2
 * SQLite 1.4
