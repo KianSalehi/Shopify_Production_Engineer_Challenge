@@ -50,7 +50,7 @@ class ProductsController < ApplicationController
         
         if @product.save
             flash[:notice] = "Product was created successfully."
-            redirect_to products_path(@product)
+            redirect_to product_path(@product)
         else
             render 'new'
         end
@@ -94,8 +94,8 @@ class ProductsController < ApplicationController
             lat = '49.2827'
             lon = '123.1207'
         end
-
-        uri = URI('https://api.openweathermap.org/data/2.5/weather?lat='+lat+'&lon='+lon+'&appid=535537cfa52d51c18a868e18b2fdd789')
+        #API key from OpenWeather is required to be placed instead of APIKEY variable
+        uri = URI('https://api.openweathermap.org/data/2.5/weather?lat='+lat+'&lon='+lon+'&appid='+APIKEY)
         response = Net::HTTP.get_response(uri)
         weather_response = response.body
         json_response = JSON.parse(weather_response)
