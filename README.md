@@ -1,10 +1,30 @@
 # Shopify Production Engineer Challenge
 
+## Table of Contents
+
+- [About the Project](#about)
+   - [Replit Demo](#replit-demo) 
+   - [Technologies Used](#technologies-used)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+   - [Git Installation](#git-installation)
+   - [Ruby Installation](#ruby-installation)
+   - [SQLite Installation](#sqlite-installation)
+   - [Rails Installation](#rails-installation)
+  - [Installation of the Project](#installation-of-the-project)
+- [Tests](#tests)
+  - [Running the Tests](#running-the-tests)
+- [Usage](#usage)
+- [Feature](#feature)
+
 ## About
 Hi! My name is Kian, and this is my Shopify Production Engineer Challenge repository. I have taken a challenge upon myself to learn Ruby on Rails from the posting time of this challenge and managed to develop this project as result of my learnings. This project has all the CRUD functionalities required for inventory tracking for a logistics company. Each product in the application should be associated with a city and an OpenWeather API endpoint is used to get the weather information about the city of the product. By clicking on "show" action button on each item on the list, the user is given the option to extract the data as a CSV file in the product details page. There are Integration, Model, Controller, and CRUD functionality tests written for this project to keep a good quality control on the code. The CSV functionality was implemented using the CSV builtin model by Ruby. 
 
-## Demo
-[Demo link for the challenge](https://ShopifyProductionEngineerChallenge.kiansalehi.repl.co)
+## Replit Demo
+! The Demo might take couple minutes to load !
+
+[Demo link for the challenge](https://ShopifyProductionEngineerChallenge.kiansalehi.repl.co) 
+
 ## Technologies Used
 * Ruby 3.1.2
 * Rails 7.0.2
@@ -20,14 +40,14 @@ Hi! My name is Kian, and this is my Shopify Production Engineer Challenge reposi
 * Rails
 
 Above technologies are required to run the application on your local device.
-## Git installation
+## Git Installation
 Download the git installer from [Git](https://git-scm.com/downloads) follow the installation steps to install git on your device.
-## Ruby installation
+## Ruby Installation
 Download and install Ruby from [Ruby](https://www.ruby-lang.org/en/downloads/) and follow the installation steps to install Ruby on your device.
 ! If you are using macOS or Linux/UNIX you might need [rbenv](https://github.com/rbenv/rbenv) or [RVM](http://rvm.io/) on your device !
-## SQLite installation
+## SQLite Installation
 Download and install SQLite from [SQLite](https://www.sqlite.org/download.html) and select the binaries based off of your operating system
-## Rails installation
+## Rails Installation
 After installation of Ruby and SQLite you can use the command line to install Rails using the following command
 ```terminal
 > gem install rails
@@ -43,7 +63,7 @@ To check if you have the dependencies you can execute the following commands in 
 ```terminal
 > git --version
 ```
-## Installation of the project
+## Installation of the Project
 ! UNIX based operating systems might require sudo in front of the following commands for permissions. !
 1- Clone the repo
 ```git
@@ -84,7 +104,7 @@ Three types of tests were written:
 
 ! Unit tests cover the validations for the product object as well !
 
-## Running the tests
+## Running the Tests
 
 Note: OpenWeather API key needs to be placed as shown in the image below to run the tests.
 
